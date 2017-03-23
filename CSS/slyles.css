@@ -115,7 +115,7 @@
         color: #222222;
         font-weight: 400;
         text-align: center; }
-        .white .grid__col .col__link .col__img {
+        .white .grid__col .col__link .col__icon {
           height: 200px;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -134,6 +134,52 @@
           font-size: 16px;
           line-height: 30px;
           padding: 0 15px; }
+      .white .grid__col .col__main {
+        width: 100%;
+        position: relative; }
+        .white .grid__col .col__main .col__img {
+          width: 100%; }
+        .white .grid__col .col__main .col__hover {
+          visibility: hidden;
+          background: rgba(0, 0, 0, 0.75);
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .white .grid__col .col__main .col__hover .col__name {
+            font-family: Lato;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 60px;
+            text-transform: uppercase; }
+          .white .grid__col .col__main .col__hover .col__chain {
+            width: 41px; }
+        .white .grid__col .col__main:hover .col__hover {
+          visibility: visible; }
+  .white__more {
+    display: block;
+    margin: 80px auto;
+    border: 3px #222222 solid;
+    width: 364px;
+    height: 54px;
+    font-family: Lato;
+    color: #222222;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+    text-transform: uppercase; }
 
 .phone {
   background: url(../img/About%20Us.png) no-repeat;
