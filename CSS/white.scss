@@ -1,0 +1,45 @@
+.white {
+    width: 78%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 105px 0;
+    .title {
+        @include title;
+        color: #222222;
+        &__h3 {
+            font-size: 35px;
+        }
+        &__hr {
+            border-color: #222222;
+        }
+    }
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        &__col {
+            width: 30%;
+            .col__link {
+                font-family: Lato;
+                color:  #222222;
+                font-weight: 400;
+                text-align: center;
+                .col__img {    
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .col__name {
+                    font-size: 24px;
+                    line-height: 24px;
+                    margin-bottom: 30px;
+                }
+                .col__p {
+                    font-size: 16px;
+                    line-height: 30px;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+}
