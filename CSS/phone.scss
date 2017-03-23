@@ -1,0 +1,55 @@
+.phone {
+    background: url(../img/About%20Us.png) no-repeat;
+    background-size: 100%;
+    padding: 0 50px;
+    &__container {
+        width: 78%;
+        margin: 0 auto;
+        font-size: 0;
+        display: flex;
+        .phone__left {
+            display: inline-block;
+            width: 50%;
+            font-family: Lato;
+            color: #ffffff;
+            text-align: left;
+            padding: 115px 0;
+            margin: 0;
+            .phone__name {
+                font-size: 45px;
+                font-weight: 400;
+                line-height: 60px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            .phone__p {
+                font-size: 22px;
+                font-weight: 100;
+                line-height: 28px;
+                padding-right: 60px;
+                margin-bottom: 70px;
+            }
+            .phone__link {
+                font-family: Lato;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 28px;
+                text-decoration: underline;
+                &:hover {
+                    color: #005494;
+                }
+            }
+        }
+        .phone__right {
+            display: inline-block;
+            width: 50%;
+            position: relative;
+            .phone__img {
+                position: absolute;
+                right: 100px;
+                bottom: 0;
+            }
+        }
+    }
+}
