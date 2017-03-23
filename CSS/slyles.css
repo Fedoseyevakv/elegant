@@ -1,10 +1,78 @@
 @import url(reset.css);
 @import url(normalize.css);
 .header {
-  background: url(../img/BG.png);
-  padding: 50px 0;
-  box-sizing: border-box; }
-  .header .top {
-    width: 75%;
-    min-width: 1024px;
-    margin: 0 auto; }
+  background: url(../img/BG.png) no-repeat;
+  background-size: 100%;
+  padding: 50px;
+  padding-bottom: 0;
+  min-width: 1024px; }
+  .header__top {
+    width: 78%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .header__top .nav {
+      margin-right: 45px; }
+      .header__top .nav__li {
+        display: inline-block; }
+        .header__top .nav__li .nav__a {
+          color: #fffffe;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 24px;
+          text-transform: uppercase;
+          font-family: 'Lato', sans-serif;
+          padding: 0 25px; }
+          .header__top .nav__li .nav__a:hover {
+            text-decoration: underline; }
+  .header__main {
+    margin: 0 auto;
+    height: 650px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 630px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .header__main .title {
+      color: #ffffff; }
+      .header__main .title__name {
+        font-family: Raleway;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: uppercase;
+        padding: 10px 0; }
+      .header__main .title__hr {
+        width: 86px;
+        border-width: 2px;
+        margin: 40px auto; }
+    .header__main .header__p {
+      font-family: Lato;
+      color: #fffefe;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center; }
+  .header__slide {
+    text-align: center;
+    padding: 40px 0; }
+    .header__slide .header__arrow {
+      width: 92px;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      opacity: 0.5; }
+      .header__slide .header__arrow:hover {
+        opacity: 1; }
