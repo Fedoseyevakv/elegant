@@ -3,6 +3,7 @@
     margin: 0 auto;
     text-align: center;
     padding: 105px 0;
+    box-sizing: border-box;
     .title {
         @include title;
         color: #222222;
@@ -59,7 +60,7 @@
                     justify-content: center;
                     .col__name {
                         font-family: Lato;
-                        color:  #ffffff;
+                        color: #ffffff;
                         font-size: 22px;
                         font-weight: 400;
                         line-height: 60px;
@@ -75,7 +76,6 @@
             }
         }
     }
-    
     &__more {
         display: block;
         margin: 80px auto;
@@ -83,11 +83,16 @@
         width: 364px;
         height: 54px;
         font-family: Lato;
-        color:  #222222;
+        color: #222222;
         font-size: 24px;
         font-weight: 400;
         line-height: 54px;
         text-align: center;
         text-transform: uppercase;
+        &:hover {
+            background: #005494;
+            border-color: #fff;
+            color: #fff;
+        }
     }
 }

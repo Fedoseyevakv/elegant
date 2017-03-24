@@ -1,3 +1,7 @@
+$font-main: Lato;
+$font-second: Raleway;
+
+
 @mixin title {
     color: #ffffff;
             &__name {
@@ -15,14 +19,21 @@
             }
 }
 
+@mixin nav {
+    
+}
+
 .header {
     background: url(../img/BG.png) no-repeat;
     background-size: 100%;
+    background-position: top;
     padding: 50px;
-    padding-bottom: 0;
     min-width: 1024px;
+    max-height: 900px;
+    box-sizing: border-box;
     &__top {
         width: 78%;
+        height: 900px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;

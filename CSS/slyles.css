@@ -3,11 +3,14 @@
 .header {
   background: url(../img/BG.png) no-repeat;
   background-size: 100%;
+  background-position: top;
   padding: 50px;
-  padding-bottom: 0;
-  min-width: 1024px; }
+  min-width: 1024px;
+  max-height: 900px;
+  box-sizing: border-box; }
   .header__top {
     width: 78%;
+    height: 900px;
     margin: 0 auto;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -82,7 +85,8 @@
   width: 78%;
   margin: 0 auto;
   text-align: center;
-  padding: 105px 0; }
+  padding: 105px 0;
+  box-sizing: border-box; }
   .white .title {
     color: #ffffff;
     color: #222222; }
@@ -180,6 +184,10 @@
     line-height: 54px;
     text-align: center;
     text-transform: uppercase; }
+    .white__more:hover {
+      background: #005494;
+      border-color: #fff;
+      color: #fff; }
 
 .phone {
   background: url(../img/About%20Us.png) no-repeat;
@@ -229,3 +237,115 @@
         position: absolute;
         right: 100px;
         bottom: 0; }
+
+.footer {
+  background: url(../img/bg_footer.png) no-repeat;
+  background-size: 100%; }
+  .footer .social {
+    width: 78%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 105px 0; }
+    .footer .social .title {
+      color: #ffffff; }
+      .footer .social .title__name {
+        font-family: Raleway;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: uppercase;
+        padding: 10px 0; }
+      .footer .social .title__hr {
+        width: 86px;
+        border-width: 2px;
+        margin: 40px auto; }
+      .footer .social .title__name {
+        font-size: 35px; }
+    .footer .social .fa {
+      color: #fff;
+      width: 25px;
+      height: 20px; }
+    .footer .social__form {
+      width: 55%;
+      margin: 0 auto;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center; }
+    .footer .social__name {
+      width: 45%;
+      margin-top: 70px;
+      background: none;
+      border: rgba(175, 175, 175, 0) 2px solid;
+      border-bottom: #afafaf 2px solid;
+      padding: 15px 30px;
+      box-sizing: border-box;
+      font-family: Lato;
+      color: #676767;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      box-sizing: border-box;
+      outline: none; }
+      .footer .social__name:focus {
+        border: #fff 2px solid;
+        color: #fff; }
+    .footer .social__email {
+      width: 45%;
+      margin-top: 70px;
+      background: none;
+      border: rgba(175, 175, 175, 0) 2px solid;
+      border-bottom: #afafaf 2px solid;
+      padding: 15px 30px;
+      box-sizing: border-box;
+      font-family: Lato;
+      color: #676767;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      box-sizing: border-box;
+      outline: none; }
+      .footer .social__email:focus {
+        border: #fff 2px solid;
+        color: #fff; }
+    .footer .social__message {
+      width: 100%;
+      margin-top: 70px;
+      background: none;
+      border: rgba(175, 175, 175, 0) 2px solid;
+      border-bottom: #afafaf 2px solid;
+      padding: 15px 30px;
+      box-sizing: border-box;
+      font-family: Lato;
+      color: #676767;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: italic;
+      box-sizing: border-box;
+      outline: none; }
+      .footer .social__message:focus {
+        border: #fff 2px solid;
+        color: #fff; }
+    .footer .social__button {
+      margin: 50px auto 0;
+      border: 3px #ffffff solid;
+      width: 177px;
+      height: 54px;
+      font-family: Lato;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      text-transform: uppercase; }
+      .footer .social__button:hover {
+        background: #005494;
+        border-color: #005494; }
