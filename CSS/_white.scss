@@ -1,0 +1,122 @@
+.white {
+    padding: 50px 0;
+    .container {
+        @include container;
+        justify-content: space-around;
+    }
+    .title {
+        @include title;
+        color: #222;
+        margin-top: 50px;
+        &__name {
+            font-size: 35px;
+        }
+        &__hr {
+            border-color: #222;
+        }
+    }
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        .col {
+            width: 32%;
+            margin-bottom: 60px;
+            &__link {
+                display: block;
+                font-family: $font-main;
+                color: #222;
+                font-weight: 400;
+                text-align: center;
+                &:hover {
+                    background: $color-main;
+                }
+                &:hover .icon__svg {
+                    fill: #fff;
+                }
+                &:hover .col__name {
+                    color: #fff;
+                }&:hover .col__p {
+                    color: #fff;
+                }
+            }
+            &__icon {
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .icon__svg {
+                fill: $color-main;
+            }
+            &__name {
+                font-size: 26px;
+                line-height: 24px;
+                margin-bottom: 30px;
+            }
+            &__p {
+                font-size: 16px;
+                line-height: 30px;
+                padding: 0 15px;
+                hyphens: auto;
+            }
+            //White 2
+            &__main {
+                width: 100%;
+                position: relative;
+            }
+            &__img {
+                width: 100%;
+            }
+            &__hover {
+                visibility: hidden;
+                background: rgba(0, 0, 0, .75);
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &__hover-name {
+                font-family: Lato;
+                color: #fff;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 60px;
+                text-transform: uppercase;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            &__chain {
+                width: 41px;
+            }
+            &:hover .col__hover {
+                visibility: visible;
+            }
+        }
+    }
+    &__more {
+        display: block;
+        margin: 80px auto;
+        border: 3px #222 solid;
+        width: 364px;
+        height: 54px;
+        font-family: Lato;
+        color: #222;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 54px;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover {
+            background: lighten($color-main, 50%);
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+}

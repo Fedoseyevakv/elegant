@@ -1,0 +1,62 @@
+.footer {
+    @include bg-img( url(../img/bg_footer.png));
+    height: 800px;
+    padding: 100px 0;
+    .container {
+        @include container;
+        justify-content: space-around;
+    }
+    .title {
+        @include title;
+        &__name {
+            font-size: 35px;
+            color: #fff;
+        }
+    }
+    .fa {
+        color: #fff;
+        font-size: 24px;
+        padding: 0 15px;
+        &:hover {
+            color: saturate($color-main, 50%);
+        }
+    }
+    .form {
+        width: 55%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center;
+        &__name {
+            width: 45%;
+            @include input;
+        }
+        &__email {
+            width: 45%;
+            @include input;
+        }
+        &__message {
+            width: 100%;
+            @include input;
+        }
+        &__button {
+            margin: 50px auto 0;
+            border: 3px #fff solid;
+            width: 177px;
+            height: 54px;
+            font-family: Lato;
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            &:hover {
+                cursor: pointer;
+                background: $color-main;
+                border-color: $color-main;
+            }
+        }
+    }
+}

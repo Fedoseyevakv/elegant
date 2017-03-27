@@ -1,0 +1,71 @@
+.header {
+    @include bg-img( url(../img/bg_header.png));
+    padding-bottom: 45px;
+    .container {
+        @include container;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .logo {
+        font-size: 0;
+        &__svg {
+            height: 16px;
+            width: 15px;
+            .cls-1 {
+                fill: $color-main;
+            }
+        }
+        &__name {
+            color: #fff;
+            font-family: $font-main;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        &:hover .cls-1 {
+            fill: lighten($color-main, 25%);
+        }
+    }
+    .nav {
+        margin-right: 45px;
+        @include nav;
+    }
+    &__main {
+        text-align: center;
+        width: 630px;
+    }
+    .title {
+        @include title;
+        &__name {
+            color: #fff;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        &__hr {
+            background: #fff;
+        }
+    }
+    &__p {
+        font-family: $font-main;
+        color: #fffefe;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        padding: 0 40px;
+    }
+    &__slide {
+        text-align: center;
+    }
+    &__arrow {
+        width: 92px;
+        transform: rotate(90deg);
+        opacity: 0.5;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

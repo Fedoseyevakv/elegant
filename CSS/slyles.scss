@@ -1,7 +1,9 @@
 @import "reset.css";
 @import "normalize.css";
 
-@import "header.scss";
-@import "white.scss";
-@import "phone.scss";
-@import "footer.scss";
+@import "_mixins";
+
+@import "_header";
+@import "_white";
+@import "_about_us";
+@import "_footer"; 
