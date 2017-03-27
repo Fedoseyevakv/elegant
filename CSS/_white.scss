@@ -29,7 +29,7 @@
                 color: #222;
                 font-weight: 400;
                 text-align: center;
-                &:hover {
+                &--services:hover  {
                     background: $color-main;
                 }
                 &:hover .icon__svg {

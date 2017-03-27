@@ -173,7 +173,7 @@
         color: #222;
         font-weight: 400;
         text-align: center; }
-        .white .grid .col__link:hover {
+        .white .grid .col__link--services:hover {
           background: #005494; }
         .white .grid .col__link:hover .icon__svg {
           fill: #fff; }
@@ -413,7 +413,7 @@
       border-bottom: #afafaf 2px solid;
       padding: 15px 30px;
       box-sizing: border-box;
-      font-family: Lato;
+      font-family: "Lato";
       color: #676767;
       font-size: 18px;
       font-weight: 400;
@@ -431,7 +431,7 @@
       border-bottom: #afafaf 2px solid;
       padding: 15px 30px;
       box-sizing: border-box;
-      font-family: Lato;
+      font-family: "Lato";
       color: #676767;
       font-size: 18px;
       font-weight: 400;
@@ -449,7 +449,7 @@
       border-bottom: #afafaf 2px solid;
       padding: 15px 30px;
       box-sizing: border-box;
-      font-family: Lato;
+      font-family: "Lato";
       color: #676767;
       font-size: 18px;
       font-weight: 400;
